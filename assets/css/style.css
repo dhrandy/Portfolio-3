@@ -1,0 +1,436 @@
+@font-face {
+  font-family: IntoLight;
+  src: url(../font/ShadowsIntoLightTwo-Regular.ttf);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.hr-titles {
+  width: 100px;
+  height: 5px !important;
+  background-color: rgb(78, 151, 247)!important;
+}
+
+/* For scrolling to the next section */
+
+.chevron {
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.chevron-up {
+  font-size: 50px;
+  padding: 0px;
+}
+
+/* Navigation */
+
+#navbarNav {
+  flex-direction: row-reverse;
+}
+
+.me.navbar-brand {
+  font-weight: bold;
+}
+
+/* General */
+
+.center {
+  text-align: center;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(20px, -50%);
+  transform: translate(20px, -50%);
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+hr {
+  background-color: white;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 28px;
+}
+
+.zoom {
+  transition: transform .4s;
+  /* Animation */
+  margin: 0 auto;
+  text-decoration: none;
+  /* no underline */
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  text-decoration: none;
+  /* no underline */
+}
+
+.quote {
+  font-size: 16px;
+}
+
+/* About Me */
+
+.about-me-font {
+  /* font-family: IntoLight, Arial;
+  font-size: 18px; */
+  padding: 0 10px 0 10px;
+}
+
+.meet-me {
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+}
+
+#about-section {
+  background-color: lightgray;
+  padding: 100px 0 50px 0;
+}
+
+#meImage {
+  width: 17em;
+  border-radius: 50%;
+  right: 20px;
+  display: block;
+  margin-left: auto;
+}
+
+.about-me-row {
+  height: 100%;
+}
+
+.about-me-text {
+  height: 100%;
+  padding: 4% 0 4% 0;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+.btn-outline-primary {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Knowledge */
+
+#knowledge-section {
+  padding: 100px 0 50px 0;
+}
+
+.knowledge-row {
+  padding-bottom: 60px;
+}
+
+.html-icon {
+  font-size: 30px;
+  color: #ffc582;
+}
+
+.css-icon {
+  font-size: 35px;
+  color: #ddda49
+}
+
+.js-icon {
+  font-size: 35px;
+  color: #54d771;
+}
+
+.db-icon {
+  font-size: 30px;
+  color: #5999cd;
+}
+
+.icon-div-height {
+  height: 45px;
+}
+
+/* Portfolio */
+
+#portfolio-section {
+  background-color: lightgray;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.container-portfolio {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.container-portfolio:hover .overlay {
+  opacity: 1;
+  height: 100%;
+}
+
+.text-portfolio,
+.text-portfolio-desc {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -2vw);
+  -ms-transform: translate(-50%, -200%);
+  text-align: center;
+}
+
+.text-portfolio-desc {
+  font-size: 12px;
+  transform: translate(-50%, 1vw);
+  -ms-transform: translate(-50%, 80%);
+}
+
+.portfolio-col {
+  margin: 0px;
+  padding: 0px;
+}
+
+.projects-progress {
+  padding-top: 20px;
+}
+
+.link {
+  font-weight: bold;
+}
+
+/* Hobbies */
+/* .wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+/* Email Section */
+
+#contact-section {
+  background-color: lightgray;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.fa-envelope {
+  font-size: 50px;
+  color: #7fbf39;
+}
+
+.right {
+  text-align: right;
+}
+
+.email {
+  padding-top: 2vh;
+}
+
+#email-me {
+  padding-top: 20px;
+}
+
+.contact-h2 {
+  padding-bottom: 20px;
+}
+
+/* Hobby Section */
+
+#hobby-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.hobby-row {
+  padding-bottom: 60px;
+}
+
+.hobby-pic {
+  width: 250px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-text {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-shadow: 3px 3px 10px #000;
+  font-size: 18px;
+}
+
+
+/* Footer Section */
+
+#footer-section {
+  text-align: center;
+  font-size: 14px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  padding: 20px 0 20px 0;
+}
+
+.footer-social-spacing {
+  margin-top: 12px;
+}
+
+.footer-link {
+  word-spacing: 14px;
+  font-weight: bold;
+  padding: 30px 0 30px 0;
+}
+
+.footer-link a {
+  color: white;
+}
+
+.social-footer {
+  margin: 0 1px 10px 0;
+}
+
+.foot-icon {
+  padding: 10px;
+  font-size: 18px;
+  width: 38px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: rgb(80, 80, 80);
+  color: white;
+}
+
+.fab:hover {
+  opacity: 0.7;
+  color: lightslategray;
+  text-decoration: none;
+}
+
+.footer-link-color {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  #meImage {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+  .right {
+    text-align: center;
+  }
+  .chevron {
+    padding: 0px;
+  }
+  /* Mobile about section */
+  #about-section {
+    padding: 45px 0 0 0;
+  }
+  .about-me-text {
+    padding: 30px 0 0 0;
+  }
+  #resume-button-center {
+    text-align: center;
+  }
+  /* Mobile knowledge, portfolio, hobby section */
+  #knowledge-section,
+  #portfolio-section,
+  #hobby-section {
+    padding: 55px 0 0 0;
+  }
+  /* Mobile contact section */
+  #contact-section {
+    padding: 55px 0 10px 0;
+  }
+  .hobby-pic {
+    padding: 0;
+  }
+}
+
+/* Parallax Scrolling for the title image */
+
+.parallax-window {
+  height: 100vh;
+  background: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 1366px) {
+  .parallax-window {
+    background-attachment: scroll;
+    /* background-image: url(../imgs/bgmobile.jpg); */
+  }
+}
